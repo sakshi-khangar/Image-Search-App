@@ -1,0 +1,102 @@
+body{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    color: black;
+}
+
+/* SEARCH */
+.searchBox{
+    margin-bottom: 20px;
+    margin-top: 50px;    
+}
+
+input{
+    padding: 10px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 15px lightgray;
+    outline: none;
+    transition: all 0.3s ease;
+}
+input:hover{
+    box-shadow: 0 0 12px balck;
+}
+input:focus{
+    border: 2px solid black;
+    box-shadow: none;
+    background-color: #ffffff;
+}
+/* Search butoon*/
+button{
+    padding: 10px 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 15px lightgray;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+/* IMAGE CONTAINER */
+#imageContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* CARD */
+.image-card{
+    width: 300px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.image-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.image-card:hover img{
+    transform: scale(1.08);
+    background-color: #e6f2ff;
+}
+
+/* TEXT */
+.image-card p{
+    padding: 12px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+/* SHOW MORE */
+#showMore{
+    display: none;
+    padding: 10px 20px;
+    margin: 30px auto;
+    background-color: #28a745;
+}
+
+#showMore:hover{
+    background-color: #218838;
+}
